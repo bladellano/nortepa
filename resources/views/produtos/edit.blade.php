@@ -16,42 +16,48 @@
                             @csrf
                             @method('PUT')
 
-                            <div>
+                            <div class="form-group">
                                 <label for="nome">Nome:</label>
-                                <input type="text" id="nome" name="nome" value="{{ old('nome', $produto->nome) }}" required>
+                                <input type="text" class="form-control" id="nome" name="nome" value="{{ old('nome', $produto->nome) }}" required>
                             </div>
-                            <div>
+
+                            <div class="form-group">
                                 <label for="resumo">Resumo:</label>
-                                <textarea id="resumo" name="resumo" required>{{ old('resumo', $produto->resumo) }}</textarea>
+                                <textarea class="form-control" id="resumo" name="resumo" required>{{ old('resumo', $produto->resumo) }}</textarea>
                             </div>
-                            <div>
+
+                            <div class="form-group">
                                 <label for="descricao_completa">Descrição Completa:</label>
-                                <textarea id="descricao_completa" name="descricao_completa" required>{{ old('descricao_completa', $produto->descricao_completa) }}</textarea>
+                                <textarea class="form-control" id="descricao_completa" name="descricao_completa" required>{{ old('descricao_completa', $produto->descricao_completa) }}</textarea>
                             </div>
-                            <div>
+
+                            <div class="form-group">
                                 <label for="imagem">Imagem:</label>
-                                <input type="file" id="imagem" name="imagem">
+                                <input type="file" class="form-control-file" id="imagem" name="imagem">
                                 @if ($produto->imagem)
-                                    <img src="{{ Storage::url($produto->imagem) }}" alt="Imagem do Produto" style="max-width: 200px; max-height: 200px;">
+                                    <img src="{{ Storage::url($produto->imagem) }}" alt="Imagem do Produto" class="img-thumbnail mt-2" style="max-width: 200px; max-height: 200px;">
                                 @else
                                     <p>Sem imagem disponível</p>
                                 @endif
                             </div>
-                            <div>
+
+                            <div class="form-group">
                                 <label for="categoria">Categoria:</label>
-                                <select id="categoria" name="categoria" required>
+                                <select class="form-control" id="categoria" name="categoria" required>
                                     <option value="maquina" {{ old('categoria', $produto->categoria) === 'maquina' ? 'selected' : '' }}>Máquina</option>
                                     <option value="ferramenta" {{ old('categoria', $produto->categoria) === 'ferramenta' ? 'selected' : '' }}>Ferramenta</option>
                                 </select>
                             </div>
-                            <div>
+
+                            <div class="form-group">
                                 <label for="estado">Estado:</label>
-                                <select id="estado" name="estado" required>
+                                <select class="form-control" id="estado" name="estado" required>
                                     <option value="novo" {{ old('estado', $produto->estado) === 'novo' ? 'selected' : '' }}>Novo</option>
                                     <option value="usado" {{ old('estado', $produto->estado) === 'usado' ? 'selected' : '' }}>Usado</option>
                                 </select>
                             </div>
-                            <button type="submit">Salvar Alterações</button>
+
+                            <button type="submit" class="btn btn-primary mt-3 btn-sm">SALVAR ALTERAÇÕES</button>
                         </form>
                     </div>
                 </div>
@@ -63,10 +69,4 @@
     @section('css') @stop
 
     @section('js')
-        <script>
-            // function confirmRemove(id) {
-            //     if (confirm('Tem certeza que deseja excluir o registro?'))
-            //         document.getElementById('form_' + id).submit();
-            // }
-        </script>
     @stop
