@@ -88,7 +88,7 @@
                         <ul class="dropdown-menu" role="menu">
 
                             <li class="mx-1">
-                                <a href="#">Gerenciador</a>
+                                <a href="./home">Gerenciador</a>
                             </li>
                             
                             <li class="mx-1">
