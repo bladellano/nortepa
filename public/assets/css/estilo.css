@@ -1,0 +1,24 @@
+*{
+margin:0;
+padding:0;
+}
+
+#carrossel{
+   width:880px;
+   height:72px;
+   overflow:hidden;
+   margin:0 auto;
+}
+
+#carrossel ul{
+   list-style:none;
+}
+#carrossel ul li{
+   float:center;
+   display:inline;
+   width:150px; 
+}
+
+p{
+   text-align:center;
+}

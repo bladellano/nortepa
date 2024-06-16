@@ -1,0 +1,279 @@
+body {
+	font-family: 'Mukta', sans-serif;
+	/*letter-spacing: -1px;*/
+}
+
+
+/*css para caixa esconder*/
+p.conteudo {
+	max-width: 60ch;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+span{
+	color:#435;
+}
+.esconder.conteudo{
+	max-width:none;
+	white-space:normal;
+}
+.caixa{
+	width: 100%;
+	text-align: justify;
+	height: auto;
+	/*background-color: #eee;*/
+	position: relative;
+	/*float: left;*/
+	border: 1px solid #fff;
+	margin: 0 auto;
+	padding: 4px;
+}
+
+.caption .caixa h3 {
+	color:#0984e3;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	letter-spacing: -1.8px;
+}
+/*fim*/
+
+a {
+	color:#000;
+	text-decoration: none;
+}
+a:hover {
+	color:#009432;
+	text-decoration: none;
+}
+
+.carousel {
+	transition: all 0.6s;
+}
+.logo-norte{
+	margin-top:24px;
+}
+
+.txt-rodape {
+	color: #4cd137;
+	font-weight: 500;
+}
+
+.ul-square {
+	list-style-type: square;
+
+}
+.ul-square-categoria {
+	list-style-type: square;
+	font-size: 1.4em;
+	background: #eee;
+	border-radius: 10px;
+	height: 170px;	
+}
+
+.ul-square-categoria a {
+	color: #000;
+	text-decoration: none;
+	/*font-weight: bold;*/
+}
+.ul-square-categoria a:hover {
+	color: #009432;
+	text-decoration: none;		
+}
+
+
+footer {
+	padding-top: 30px;
+	color:#fff;
+	background-color: #353b48;
+}
+.container-fluid {
+	background-color: #2f3640;
+}
+footer .row .col-md-4 .btn-orcamento {
+	width: 220px;
+	height: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+#representacoes {
+	color: #444;
+	padding: 10px 0;
+	background-color: #fff;
+}
+#categoria{
+
+	padding: 18px 0px;
+	background-color: #fff;
+	color: #444;
+
+}
+#empresa {
+	color: #fff;
+	padding: 18px 0px;
+	background-color: #009432;
+
+}
+#feiras {
+	color: #fff;
+	padding: 18px 0px;
+	background-color: #009432;
+
+}
+#fale-conosco {
+	color: #444;
+	padding: 10px 0;
+	background-color:#dfe6e9;
+}
+#servicos {
+	color: #fff;
+	padding: 10px 0;
+	background-color:#009432;
+}
+.hr-mobile {
+	display: none;
+	border:1px dashed #95a5a6;
+}
+.assinatura {
+	font-size: 0.8em;
+	color:#95a5a6;
+
+}
+
+div.d-none:nth-child(2) {
+	line-height: 52px;
+	height: 52px;
+}
+
+#mainNav {
+	border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+	background-color: rgba(33, 37, 41, 0.4);
+	/*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+#mainNav .navbar-brand {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	/*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+	color: #fff;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+	font-size: .9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #DDD;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+	color: #fff;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+	color: #009432 !important;
+	background-color: transparent;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+	background-color: transparent;
+}	
+
+
+/*classe adiciona pelo jquery*/
+#mainNav.navbar-shrink {
+	border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+	background-color: #fff;
+}
+#mainNav.navbar-shrink .navbar-brand {
+	color: #009432;
+}
+#mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+	color: #009432;
+}
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+	color: #212529;
+}
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+	color: #009432;
+}
+/*fim - configuração navbar*/
+
+
+@media (max-width:768px) {
+
+	input[id="telefone"]{
+		margin-bottom: 15px;
+	}
+
+	.hr-mobile {
+		display: block;
+	}
+
+	#mainNav {
+		border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+		background-color: #fff;			    
+	}
+	#mainNav .navbar-brand {
+		color: #009432;
+	}
+	#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+		color: #009432;
+	}
+	#mainNav .navbar-nav > li.nav-item > a.nav-link {
+		padding: 0.5rem 1rem;
+	}
+	#mainNav .navbar-nav > li.nav-item > a.nav-link,
+	#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+		color: #212529;
+	}
+	#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+	#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+		color: #009432;
+	}
+	.carousel {
+		margin-top: 56px;
+
+	}
+
+
+}
+
+section#feiras .container .row .col-md-12 a {
+	color: #badc58;
+	font-size: 0.9em
+}
+
+.expositor {
+	color:red;
+	display: inline;
+	background: #ffcc00;
+	border-radius: 4px;
+	margin:0 5px;
+	padding: 4px;
+	font-size: 0.7em;
+	font-weight: 600;
+}
+
+.fade:not(.show) {
+	opacity: 1;
+}
+footer .container .row .col-md-4 ul.txt-rodape.ul-square li a  {
+	color:#4cd137;
+}
+
+footer .container .row .col-md-4 ul.txt-rodape.ul-square li a:hover {
+	color: #fff;
+} 
